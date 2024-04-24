@@ -33,6 +33,7 @@ body{
    flex-direction: column;
    align-items: center;
     justify-content: center;
+    position: relative;
     
    
 }
@@ -89,7 +90,7 @@ span{
     margin-top: 10px;
   }
 
-      .container p{
+  .container p{
    width: 200px;
    text-align: center;
   }
@@ -97,6 +98,7 @@ span{
   .container p span{
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -109,6 +111,18 @@ span{
     font-size: 30px;
   }
 
+ 
+
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+  z-index: -1;
 }
 
 
@@ -127,6 +141,10 @@ span{
             <a href="https://twitter.com/mezekku"><i class='bx bxl-twitter bx-sm'></i></a>
             <a href="https://t.me/mezekku"><i class='bx bxl-telegram bx-sm'></i></a>
         </div>
+        <video autoplay muted loop id="background-video">
+          <source src="12716-241674181_small.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
     </div>
 
 
